@@ -19,6 +19,7 @@ exports.generate = (messageLength, letterNumber) ->
         key = x.charAt i
         if((key>='a'&&key<='z')||(key>='A'&&key<='Z'))
           unique[key] = key 
+        else return false
       Object.keys(unique).length == Number(letterNumber)
     else false
   
