@@ -25,4 +25,4 @@ exports.generate = (messageLength, letterNumber) ->
   console.log "targetList length: #{targetList.length}"
   if targetList?.length > 0
     wordString = targetList.join "\n"
-    fs.writeFileSync "#{messageLength}_#{letterNumber}.txt", wordString, 'utf8'
+    fs.writeFileSync "#{messageLength}_#{letterNumber}.word", wordString, 'utf8'
