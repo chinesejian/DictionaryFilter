@@ -1,0 +1,5 @@
+#!/usr/bin/env coffee
+
+{generate} = require './filter'
+params = process.argv.slice(2)
+generate params[0], params[1]
